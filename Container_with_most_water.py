@@ -7,6 +7,7 @@
 # Your code here along with comments explaining your approach
 #I have used two pointer approach to reduce from n2 time to n. Using left and right pointer we can get the min height to contain the water
 #Then calculate the area by multiplying minimum height
+# Increment the left if left < right else decrement the right pointer
 
 class Solution:
     def maxArea(self, height: list[int]) -> int:
