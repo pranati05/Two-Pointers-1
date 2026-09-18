@@ -1,3 +1,17 @@
+# Time Complexity : O(N2)
+# Space Complexity : O(1)x
+# Did this code successfully run on Leetcode : Yes
+# Any problem you faced while coding this : No
+
+
+# Your code here along with comments explaining your approach
+# I have sorted the array and used two pointers left and right and keeping i pointer to iterate over the array.
+# Using three pointers i, left and right
+# If the sum == 0, append to arraylist and increment left pointer and decrement right pointer. 
+# Also for the duplicates we just move left and right pointer if left == left - 1 and right == right - 1
+# If the sum > 0, decrement right pointer
+# If the sum < 0, increment left pointer
+
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
         result = set()
